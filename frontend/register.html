@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elora Boutique - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<nav>
+    <span class="nav-logo">Elora Boutique</span>
+    <div class="menu">
+        <a href="index.html">HOME</a>
+        <a href="products.html">SHOP</a>
+        <a href="products.html">NEW ARRIVALS</a>
+        <a href="products.html">COLLECTIONS</a>
+        <a href="cart.html">CART</a>
+        <a href="login.html" id="authLink">LOGIN</a>
+    </div>
+    <div class="nav-icons">⌕ ♡ 🛍</div>
+</nav>
+
+<div class="auth-section">
+    <div class="auth-card">
+        <h2>CREATE ACCOUNT</h2>
+        <p class="auth-sub">Join ShopEasy today</p>
+
+        <div id="message"></div>
+
+        <form onsubmit="registerUser(event)">
+            <div class="form-group">
+                <label>FULL NAME</label>
+                <input type="text" id="username" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+                <label>EMAIL ADDRESS</label>
+                <input type="email" id="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+                <label>PASSWORD</label>
+                <input type="password" id="password" placeholder="Choose a password" required>
+            </div>
+            <button type="submit" class="auth-btn">CREATE ACCOUNT →</button>
+        </form>
+
+        <p class="auth-link">
+            Already have an account? <a href="login.html">Sign in here</a>
+        </p>
+    </div>
+</div>
+
+<div class="footer-bottom">&copy; 2026 Elora Boutique</div>
+
+<script src="script.js"></script>
+<script>
+    updateNav();
+</script>
+
+</body>
+</html>
+

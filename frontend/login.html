@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elora Boutique - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<nav>
+    <span class="nav-logo">Elora Boutique</span>
+    <div class="menu">
+        <a href="index.html">HOME</a>
+        <a href="products.html">SHOP</a>
+        <a href="products.html">NEW ARRIVALS</a>
+        <a href="products.html">COLLECTIONS</a>
+        <a href="cart.html">CART</a>
+        <a href="login.html" id="authLink">LOGIN</a>
+    </div>
+    <div class="nav-icons">⌕ ♡ 🛍</div>
+</nav>
+
+<div class="auth-section">
+    <div class="auth-card">
+        <h2>WELCOME BACK</h2>
+        <p class="auth-sub">Sign in to your account</p>
+
+        <div id="message"></div>
+
+        <form onsubmit="loginUser(event)">
+            <div class="form-group">
+                <label>EMAIL ADDRESS</label>
+                <input type="email" id="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+                <label>PASSWORD</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="auth-btn">SIGN IN →</button>
+        </form>
+
+        <p class="auth-link">
+            Don't have an account? <a href="register.html">Create one here</a>
+        </p>
+    </div>
+</div>
+
+<div class="footer-bottom">&copy; 2026 Elora Boutique</div>
+
+<script src="script.js"></script>
+<script>
+    updateNav();
+</script>
+
+</body>
+</html>
+

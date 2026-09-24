@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elora Boutique - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<nav>
+    <span class="nav-logo">Elora Boutique</span>
+    <div class="menu">
+        <a href="index.html">HOME</a>
+        <a href="products.html">SHOP</a>
+        <a href="new-arrivals.html">NEW ARRIVALS</a>
+        <a href="collection.html">COLLECTIONS</a>
+        <a href="cart.html">CART</a>
+        <a href="login.html" id="authLink">LOGIN</a>
+    </div>
+    <div class="nav-icons">⌕ ♡ 🛍</div>
+</nav>
+
+<section class="hero">
+    <div class="hero-text">
+        <p class="subtitle">New Collection</p>
+        <h1>EFFORTLESS<br>STYLE FOR<br>EVERY YOU</h1>
+        <p class="desc">Timeless pieces. Modern elegance.<br>Made for every moment.</p>
+        <button onclick="window.location.href='products.html'">SHOP NOW →</button>
+    </div>
+    
+</section>
+
+
+
+<section>
+    <div class="section-title">
+        <p class="label">SHOP BY CATEGORY</p>
+        <h2>EXPLORE OUR COLLECTIONS</h2>
+    </div>
+    <div class="categories">
+        <div class="category-item">
+            <div class="img-wrap"><img src="images/cotton.jpg" alt="cotton"></div>
+            <b>Cotton</b>
+            <small>SHOP NOW →</small>
+        </div>
+        <div class="category-item">
+            <div class="img-wrap"><img src="images/rayon.jpg" alt="rayon"></div>
+            <b>Rayon</b>
+            <small>SHOP NOW →</small>
+        </div>
+        <div class="category-item">
+            <div class="img-wrap"><img src="images/SILK.jpg" alt="SILK"></div>
+            <b>Silk</b>
+            <small>SHOP NOW →</small>
+        </div>
+        <div class="category-item">
+            <div class="img-wrap"><img src="images/organza.jpg" alt="organza"></div>
+            <b>Organza</b>
+            <small>SHOP NOW →</small>
+        </div>
+        <div class="category-item">
+            <div class="img-wrap"><img src="images/Embroidered.jpg" alt="Embroidered"></div>
+            <b>Embroidered</b>
+            <small>SHOP NOW →</small>
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="section-title-row">
+        <h2>NEW ARRIVALS</h2>
+        
+    </div>
+    <div id="featuredGrid" class="products-grid">
+        <p style="color:#bbb;">Loading products...</p>
+    </div>
+    <div class="center">
+        <button class="btn-outline" onclick="window.location.href='products.html'">VIEW ALL PRODUCTS →</button>
+    </div>
+</section>
+
+<div class="why">
+    <div class="why-quote">
+        <h2>WHY WOMEN LOVE Elora Boutique</h2>
+        <p class="quote">"The quality, style and fit are absolutely perfect. ShopEasy is my go-to for every occasion."</p>
+        <p class="reviewer">— Sarah M.</p>
+    </div>
+    <div class="features">
+        <div class="feature-item">
+            <div class="feature-icon">♡</div>
+            <b>PREMIUM QUALITY</b>
+            <p>Finest fabrics & attention to detail</p>
+        </div>
+        <div class="feature-item">
+            <div class="feature-icon">✧</div>
+            <b>TRENDY DESIGNS</b>
+            <p>Stay ahead with the latest styles</p>
+        </div>
+        <div class="feature-item">
+            <div class="feature-icon">♧</div>
+            <b>MADE FOR YOU</b>
+            <p>Comfortable and flattering fits</p>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-brand">
+        <h2>Elora Boutique</h2>
+        <p>Be your own kind of beautiful.</p>
+    </div>
+
+    <div class="footer-links">
+        <h4>QUICK LINKS</h4>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="collection.html">COLLECTION</a>
+    </div>
+
+    <div class="footer-links">
+        <h4>CUSTOMER CARE</h4>
+        <p>Shipping & Delivery</p>
+        <p>Returns & Exchanges</p>
+        <p>Size Guide</p>
+        <p>FAQs</p>
+    </div>
+
+    <div class="footer-links">
+        <h4>ABOUT US</h4>
+        <p>Our Story</p>
+        <p>Careers</p>
+        <p>Blog</p>
+        <a href="login.html">My Account</a>
+    </div>
+</footer>
+<div class="footer-bottom">&copy; 2026 Elora Boutique</div>
+
+<script src="script.js"></script>
+    <script>
+    updateNav();
+    loadFeaturedProducts();
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elora Boutique- Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<nav>
+    <span class="nav-logo">Elora Boutique</span>
+    <div class="menu">
+        <a href="index.html">HOME</a>
+        <a href="products.html">SHOP</a>
+        <a href="products.html">NEW ARRIVALS</a>
+        <a href="products.html">COLLECTIONS</a>
+        <a href="cart.html">CART</a>
+        <a href="login.html" id="authLink">LOGIN</a>
+    </div>
+    <div class="nav-icons">⌕ ♡ 🛍</div>
+</nav>
+
+<div class="breadcrumb">
+    <a href="index.html">Home</a> / <a href="products.html">Products</a> / <span id="breadcrumbName">Product</span>
+</div>
+
+<div class="product-view" id="productView">
+    <p style="color:#bbb; padding: 60px 7%;">Loading product...</p>
+</div>
+
+<section>
+    <div class="section-title-row">
+        <h2>YOU MAY ALSO LIKE</h2>
+        <a href="products.html">View all →</a>
+    </div>
+    <div id="relatedGrid" class="products-grid"></div>
+</section>
+
+<footer>
+    <div class="footer-brand">
+        <h2>Elora Boutique</h2>
+        <p>Be your own kind of beautiful.</p>
+    </div>
+    <div class="footer-links">
+        <h4>CUSTOMER CARE</h4>
+        <p>Shipping & Delivery</p>
+        <p>Returns & Exchanges</p>
+        <p>Size Guide</p>
+        <p>FAQs</p>
+    </div>
+    <div class="footer-links">
+        <h4>ABOUT US</h4>
+        <p>Our Story</p>
+        <p>Careers</p>
+        <p>Blog</p>
+        <a href="login.html">My Account</a>
+    </div>
+</footer>
+<div class="footer-bottom">&copy; 2026 Elora Boutique</div>
+
+<script src="script.js"></script>
+<script>
+    updateNav();
+    loadProductDetail();
+    loadRelatedProducts();
+</script>
+
+</body>
+</html>
+

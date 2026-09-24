@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elora Boutique- Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<nav>
+    <span class="nav-logo">Elora Boutique</span>
+    <div class="menu">
+        <a href="index.html">HOME</a>
+        <a href="products.html">SHOP</a>
+        <a href="products.html">NEW ARRIVALS</a>
+        <a href="products.html">COLLECTIONS</a>
+        <a href="cart.html">CART</a>
+        <a href="login.html" id="authLink">LOGIN</a>
+    </div>
+    <div class="nav-icons">⌕ ♡ 🛍</div>
+</nav>
+
+<div class="page-header">
+    <h2>CHECKOUT</h2>
+</div>
+
+<div id="checkoutForm">
+    <div class="checkout-grid">
+
+        <div class="checkout-form-wrap">
+            <form onsubmit="placeOrder(event)">
+
+                <h3>SHIPPING INFORMATION</h3>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>FIRST NAME</label>
+                        <input type="text" id="firstName" placeholder="Jane" required>
+                    </div>
+                    <div class="form-group">
+                        <label>LAST NAME</label>
+                        <input type="text" id="lastName" placeholder="Doe" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>EMAIL ADDRESS</label>
+                    <input type="email" id="checkoutEmail" placeholder="jane@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>STREET ADDRESS</label>
+                    <input type="text" id="address" placeholder="123 Main Street" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>CITY</label>
+                        <input type="text" id="city" placeholder="New York" required>
+                    </div>
+                    <div class="form-group">
+                        <label>ZIP CODE</label>
+                        <input type="text" id="zip" placeholder="10001" required>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 28px;">PAYMENT</h3>
+
+                <div class="form-group">
+                    <label>CARD NUMBER</label>
+                    <input type="text" placeholder="•••• •••• •••• ••••" maxlength="19">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>EXPIRY DATE</label>
+                        <input type="text" placeholder="MM / YY">
+                    </div>
+                    <div class="form-group">
+                        <label>CVV</label>
+                        <input type="text" placeholder="•••" maxlength="4">
+                    </div>
+                </div>
+
+                <button type="submit" class="place-order-btn">PLACE ORDER →</button>
+
+            </form>
+        </div>
+
+        <div class="checkout-summary">
+            <h3>ORDER SUMMARY</h3>
+            <div id="orderSummary"></div>
+            <div class="summary-total">
+                <span>TOTAL</span>
+                <span id="summaryTotal">₹0.00</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="successMessage" class="success-box">
+    <div class="success-icon">✓</div>
+    <h2>ORDER PLACED!</h2>
+    <p>Thank you for shopping with Elora Boutique.<br>Your order is being prepared with care.</p>
+    <button onclick="window.location.href='index.html'">CONTINUE SHOPPING →</button>
+</div>
+
+<footer>
+    <div class="footer-brand">
+        <h2>Elora Boutique</h2>
+        <p>Be your own kind of beautiful.</p>
+    </div>
+    <div class="footer-links">
+        <h4>CUSTOMER CARE</h4>
+        <p>Shipping & Delivery</p>
+        <p>Returns & Exchanges</p>
+    </div>
+    <div class="footer-links">
+        <h4>ACCOUNT</h4>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </div>
+</footer>
+<div class="footer-bottom">&copy; 2026 ShopEasy</div>
+
+<script src="script.js"></script>
+<script>
+    updateNav();
+    loadCheckoutSummary();
+</script>
+
+</body>
+</html>
+

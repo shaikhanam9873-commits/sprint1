@@ -1,0 +1,146 @@
+/* ================================
+   ELORA BOUTIQUE - ABOUT PAGE
+   ================================ */
+
+.about-section {
+    min-height: 520px;
+    padding: 70px 10%;
+    background: #D9A6A9;
+    
+}
+
+/* Page Heading */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+    .section-title h1 {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 42px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #3a2a21;
+    }
+
+    .section-title p {
+        margin-top: 12px;
+        font-size: 14px;
+        color: #7f7168;
+        letter-spacing: 0.5px;
+    }
+
+/* About Content */
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-text h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #111;
+    margin: 0 auto 20px;
+    max-width: 850px;
+}
+
+.about-text h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 45px;
+    margin-bottom: 18px;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 55px 8%;
+    background: #f2e9da;
+    border-top: 1px solid #ded3c4;
+}
+
+.footer-brand h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 12px;
+}
+
+.footer-brand p {
+    color: #6e625b;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+    .footer-links h4 {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+        color: #000;
+        margin-bottom: 8px;
+    }
+
+    .footer-links a,
+    .footer-links p {
+        text-decoration: none;
+        color: #6e625b;
+        font-size: 13px;
+        margin: 0;
+    }
+
+        .footer-links a:hover {
+            color: #7f8b6a;
+        }
+
+/* ================================
+   MOBILE
+   ================================ */
+
+@media (max-width: 768px) {
+
+    .about-section {
+        padding: 55px 7%;
+    }
+
+    .section-title h1 {
+        font-size: 34px;
+    }
+
+    .about-text h2 {
+        font-size: 25px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
